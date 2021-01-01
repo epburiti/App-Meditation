@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ImageBackground, Image } from 'react-native';
-
+import { Link } from "react-router-native";
 import { Container, ViewImg, TitleRef, Title, ButtonCustom, LoginTxt, TextBtn, LinkToView, ViewTxts, ViewLogin, Line } from './styles';
 
 const Home = () => {
@@ -32,7 +32,9 @@ const Home = () => {
           </View>
 
           <ViewLogin>
-            <LoginTxt>ALREADY HAVE AN ACCOUNT? <LinkToView>LOG IN</LinkToView></LoginTxt>
+            <LoginTxt>ALREADY HAVE AN ACCOUNT?  <Link to={`/LogIn`}><LinkToView>LOG IN</LinkToView></Link>
+
+            </LoginTxt>
           </ViewLogin>
 
           <Line></Line>
@@ -41,5 +43,6 @@ const Home = () => {
     </>
   );
 }
+
 
 export default Home;

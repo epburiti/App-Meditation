@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Home from "./pages/Home";
 import LogIn from "./pages/LogIn";
 
+
 import { Image } from "react-native";
 const Stack = createStackNavigator();
 
