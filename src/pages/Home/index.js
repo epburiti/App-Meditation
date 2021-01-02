@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, ImageBackground, Image } from 'react-native';
-import { Link } from "react-router-native";
-import { Container, ViewImg, TitleRef, Title, ButtonCustom, LoginTxt, TextBtn, LinkToView, ViewTxts, ViewLogin, Line } from './styles';
+import { Container, ViewImg, TitleRef, Title, LoginTxt, LinkToView, ViewTxts, ViewLogin, Line } from './styles';
 
-const Home = () => {
+import ButtonCustom from "./../../components/Button/index";
+
+const Home = ({ navigation }) => {
   return (
     <>
       <ImageBackground
@@ -26,13 +27,13 @@ const Home = () => {
 
 
           <View>
-            <ButtonCustom
+            <ButtonCustom desc="Sign Up" color="#8E97FD"
             // onPress={() => Alert.alert('Simple Button pressed')}
-            ><TextBtn>Sign Up</TextBtn></ButtonCustom>
+            />
           </View>
 
           <ViewLogin>
-            <LoginTxt>ALREADY HAVE AN ACCOUNT?  <Link to={`/LogIn`}><LinkToView>LOG IN</LinkToView></Link>
+            <LoginTxt>ALREADY HAVE AN ACCOUNT? <LinkToView onPress={() => { navigation.navigate('LogIn') }}>LOG IN</LinkToView>
 
             </LoginTxt>
           </ViewLogin>

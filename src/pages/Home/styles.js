@@ -28,26 +28,7 @@ export const TitleRef = styled.Text`
  text-align:center;
  color: #A1A4B2;
 `;
-export const ButtonCustom = styled.TouchableHighlight`
-    margin-Right:40;
-    margin-Left:40;
-    margin-Top:10;
-    padding-Top:20;
-    padding-Bottom:20;
-    background-color:#8E97FD;
-    border-Radius:30;
-    width:300;
-    justify-content:center;
-    align-items:center;
 
-  
-`;
-export const TextBtn = styled.Text`
-  color:#F6F1FB;
-  text-transform:uppercase;
-  font-size:15;
-  font-weight:500;
-`;
 export const ViewLogin = styled.View`
 margin-top:20;
 margin-bottom:60;
