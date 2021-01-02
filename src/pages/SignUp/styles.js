@@ -6,6 +6,8 @@ export const Container = styled.View`
   margin-bottom:0;
   justify-content:space-around;
   align-items:center;
+
+  
 `;
 export const TextTop = styled.Text`
  color:#3F414E;

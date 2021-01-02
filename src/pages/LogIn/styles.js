@@ -39,3 +39,9 @@ export const TxtBottom = styled.Text`
  color:#A1A4B2;
    
 `;
+export const InputCustom = styled.TextInput`
+  background-color: #F2F3F7;
+  width:90%;
+  border-radius:10px;
+  padding-left:10px;
+  `;

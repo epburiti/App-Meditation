@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Line } from './styles';
 
-function DecorationBottom() {
+function DecorationBottom({ color = "#A1A4B2" }) {
   return (
-    <Line ></Line>
+    <Line color={color}></Line>
   );
 }
 

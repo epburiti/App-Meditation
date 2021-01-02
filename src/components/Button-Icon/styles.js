@@ -3,14 +3,14 @@ import styled from 'styled-components/native';
 
 
 export const Button = styled.TouchableHighlight`
-    margin-Right:40;
-    margin-Left:40;
-    margin-Top:10;
-    padding-Top:20;
-    padding-Bottom:20;
+    margin-Right:40px;
+    margin-Left:40px;
+    margin-Top:10px;
+    padding-Top:20px;
+    padding-Bottom:20px;
     background-color:${props => props.color} ;
-    border-Radius:30;
-    width:350;
+    border-Radius:30px;
+    width:350px;
     justify-content:center;
     align-items:center;
     border: ${props => props.border};
@@ -24,7 +24,7 @@ export const TextBtn = styled.Text`
 export const ViewBtn = styled.View`
   color:#F6F1FB;
   text-transform:uppercase;
-  font-size:15;
+  font-size:15px;
   font-weight:500;
   width:66%; 
   flex-direction:row;

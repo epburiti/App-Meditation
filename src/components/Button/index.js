@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Button, TextBtn } from './styles';
 
-function ButtonCustom({ desc, color }) {
+function ButtonCustom({ desc, onPress, color = "#8E97FD" }) {
   return (
-    <Button ><TextBtn>{desc}</TextBtn></Button>
+    <Button onPress={onPress} BckColor={color}><TextBtn>{desc}</TextBtn></Button>
   );
 }
 
