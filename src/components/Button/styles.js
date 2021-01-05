@@ -2,7 +2,7 @@
 import styled from 'styled-components/native';
 
 
-export const Button = styled.TouchableHighlight`
+export const Button = styled.TouchableOpacity`
     margin-Right:40px;
     margin-Left:40px;
     margin-Top:10px;

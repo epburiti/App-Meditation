@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Welcome from "../pages/welcome";
 import Topic from "../pages/Topic";
+import Reminders from "../pages/Reminders";
 
 
 const Stack = createStackNavigator();
@@ -24,12 +25,12 @@ export default function Routes() {
           }} />
         <Stack.Screen name="Topic" component={Topic}
           options={{
-            headerTitle: () => (
-              <Image source={require("./../assets/Logo.png")} />
-            ),
-            headerTitleAlign: "center",
-            headerTransparent: true,
-            headerStyle: { backgroundColor: 'white', height: 140 }
+            headerShown: false
+
+          }} />
+        <Stack.Screen name="Reminders" component={Reminders}
+          options={{
+            headerShown: false
 
           }} />
       </Stack.Navigator>
