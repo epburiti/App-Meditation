@@ -756,6 +756,10 @@
         "source": "C:\\Users\\Erick Buriti\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_overlay.xml.flat",
+        "source": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\node_modules\\react-native-date-picker\\android\\build\\intermediates\\packaged_res\\debug\\drawable\\overlay.xml"
+    },
+    {
         "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
         "source": "C:\\Users\\Erick Buriti\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
@@ -958,6 +962,10 @@
     {
         "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Erick Buriti\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_native_picker.xml.flat",
+        "source": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\node_modules\\react-native-date-picker\\android\\build\\intermediates\\packaged_res\\debug\\layout\\native_picker.xml"
     },
     {
         "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -2086,6 +2094,10 @@
     {
         "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_rn_dev_preferences.xml.flat",
         "source": "C:\\Users\\Erick Buriti\\.gradle\\caches\\transforms-2\\files-2.1\\21cc2bff3cb79155e837cfdd16c1a3dc\\jetified-react-native-0.63.4\\res\\xml\\rn_dev_preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_ios_clone.xml.flat",
+        "source": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\node_modules\\react-native-date-picker\\android\\build\\intermediates\\packaged_res\\debug\\layout\\ios_clone.xml"
     },
     {
         "merged": "C:\\Users\\Erick Buriti\\Desktop\\Repositorys\\appMeditation\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
