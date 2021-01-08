@@ -26,7 +26,8 @@ export default function Routes() {
         <Stack.Screen options={{
           headerTitle: () => (
             // <Image source={require("./assets/LogIn/Header.png")} />
-            <Text></Text>
+            <></>
+
           ),
           headerTransparent: true,
           // headerStyle: { backgroundColor: 'white', height: 350, width: "100%", position: 'absolute' }
@@ -36,8 +37,8 @@ export default function Routes() {
         <Stack.Screen options={{
           headerTitle: () => (
             // <ImageBackground source={require("./assets/LogIn/Header.png")} style={{ flex: 1, height: "60%", width: '100%', backgroundColor: "red" }}></ImageBackground>
+            <></>
 
-            <Text></Text>
 
           ),
           headerTransparent: true,

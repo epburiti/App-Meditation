@@ -11,13 +11,13 @@ const HomeSignInLogIn = ({ navigation }) => {
       <ImageBackground
         // resizeMode={'stretch'} // or cover
         style={{ flex: 1, height: "60%", width: '100%', backgroundColor: "#FFFFFF" }} // must be passed from the parent, the number may vary depending upon your screen size
-        source={require('./../../assets/Home/banner.png')}
+        source={require('./../../assets/SingUp-SignIn/banner.png')}
       >
         <Container>
 
           <ViewImg>
             <Image
-              source={require('./../../assets/Home/main.png')}
+              source={require('./../../assets/SingUp-SignIn/main.png')}
             />
           </ViewImg>
 
