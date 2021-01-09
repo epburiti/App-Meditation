@@ -4,7 +4,7 @@ import { Button, TextBtn } from './styles';
 
 function ButtonCustom({ desc, onPress, color = "#8E97FD" }) {
   return (
-    <Button onPress={onPress} BckColor={color}><TextBtn>{desc}</TextBtn></Button>
+    <Button onPress={onPress} BckColor={color}><TextBtn BckColor={color}>{desc}</TextBtn></Button>
   );
 }
 

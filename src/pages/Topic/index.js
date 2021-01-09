@@ -1,7 +1,7 @@
 import React from 'react';
-import { ImageBackground } from "react-native";
+import { ImageBackground, Image } from "react-native";
 
-import { Container, ViewTop, TextBold, TextOpacity, SubTitle, ImageCustom, FlatListCustom, ScrollViewCustom, LinkToView } from './styles';
+import { Container, ViewTop, TextBold, TextOpacity, SubTitle, ImageCustom, FlatListCustom, ScrollViewCustom, LinkToView, ContainerImgs, ContainerImgsSub, ViewImgContainer } from './styles';
 
 const Topic = ({ navigation }) => {
   const DATA = [
@@ -56,13 +56,44 @@ const Topic = ({ navigation }) => {
           {/* <FlatListCustom
             data={DATA}
             keyExtractor={item => item.id}
-            numColumns={3}
+            numColumns={4}
             renderItem={({ item }) => (
               <LinkToView onPress={() => { navigation.navigate('Reminders') }}>
                 <ImageCustom source={item.src} />
               </LinkToView>
             )}
           /> */}
+          <ContainerImgs>
+            <ContainerImgsSub>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/1.png")} />
+              </ViewImgContainer>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/3.png")} />
+              </ViewImgContainer>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/5.png")} />
+              </ViewImgContainer>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/7.png")} />
+              </ViewImgContainer>
+            </ContainerImgsSub>
+            <ContainerImgsSub>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/2.png")} />
+              </ViewImgContainer>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/4.png")} />
+              </ViewImgContainer>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/6.png")} />
+              </ViewImgContainer>
+              <ViewImgContainer onPress={() => { navigation.navigate('Reminders') }}>
+                <Image source={require("./../../assets/Topic/8.png")} />
+              </ViewImgContainer>
+            </ContainerImgsSub>
+          </ContainerImgs>
+
         </Container>
       </ScrollViewCustom>
 

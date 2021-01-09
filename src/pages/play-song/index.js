@@ -5,9 +5,12 @@ import { Container, ScrollViewCustom, ImageBackgroundCustom, TextBold, TextOpaci
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { useRoute } from '@react-navigation/native';
 
+const PlaySong = () => {
 
-const PlaySong = (props) => {
+  const route = useRoute();
+  console.log(route.params)
   return (
     <ImageBackgroundCustom source={require("./../../assets/Play-song/Light.png")}
     >

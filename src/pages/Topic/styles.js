@@ -13,7 +13,7 @@ export const ViewTop = styled.View`
 
 export const TextBold = styled.Text`
   font-weight:bold;
-  font-size:20px;
+  font-size:28px;
   color:#3F414E;
 `;
 
@@ -42,4 +42,19 @@ export const FlatListCustom = styled.FlatList`
 export const LinkToView = styled.TouchableOpacity`
   margin:20px 1%;
   width:48%;
+`;
+
+export const ContainerImgs = styled.View`
+margin-top:30px;
+flex-direction:row;
+/* flex-wrap:wrap; */
+width:95%;
+`;
+export const ContainerImgsSub = styled.View`
+/* marginleft */
+`;
+export const ViewImgContainer = styled.TouchableOpacity`
+width:48%;
+margin: 10px;
+
 `;
