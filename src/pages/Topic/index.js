@@ -41,7 +41,7 @@ const Topic = ({ navigation }) => {
   ];
   return (
     <ImageBackground
-      style={{ flex: 1, height: "280%", width: '100%', backgroundColor: "#ffffff" }}
+      style={{ flex: 1, height: "280%", width: '100%' }}
       source={require('./../../assets/Topic/background.png')}>
 
       <ScrollViewCustom contentContainerStyle={{ flexGrow: 1 }}>
@@ -53,7 +53,7 @@ const Topic = ({ navigation }) => {
             <SubTitle>choose a topic to focuse on:</SubTitle>
           </ViewTop>
 
-          <FlatListCustom
+          {/* <FlatListCustom
             data={DATA}
             keyExtractor={item => item.id}
             numColumns={3}
@@ -62,7 +62,7 @@ const Topic = ({ navigation }) => {
                 <ImageCustom source={item.src} />
               </LinkToView>
             )}
-          />
+          /> */}
         </Container>
       </ScrollViewCustom>
 

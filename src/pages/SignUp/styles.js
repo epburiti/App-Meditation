@@ -1,6 +1,10 @@
 import styled from 'styled-components/native';
-
+export const ScrollViewCustom = styled.ScrollView`
+  background-color:#ffffff;
+  margin:0;
+`;
 export const Container = styled.View`
+  margin-top:50px;
   background-color: #ffffff;
   height:100%;
   margin-bottom:0;

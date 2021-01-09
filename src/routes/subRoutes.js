@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Home from './../pages/Home';
-import Sleep from './../pages/Sleep';
+import HomeSleep from '../pages/Home-Sleep';
 import Meditate from './../pages/Meditate';
-import Music from './../pages/Music';
+import PlaySong from './../pages/play-song';
 import Perfil from './../pages/Perfil';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -45,9 +45,12 @@ export default function Routes() {
       labelStyle={{ fontWeight: 'bold', fontSize: "22px" }}
     >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Sleep" component={Sleep} />
+      <Tab.Screen name="Sleep" component={HomeSleep} />
       <Tab.Screen name="Meditate" component={Meditate} />
-      <Tab.Screen name="Music" component={Music} />
+      <Tab.Screen name="Music" component={PlaySong}
+        tabBarVisible={true}
+
+      />
       <Tab.Screen name="Perfil" component={Perfil} />
 
     </Tab.Navigator>

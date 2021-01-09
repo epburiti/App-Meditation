@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Text, ImageBackground } from "react-native";
+import BackButton from "../components/Back-Button";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeSignInLogIn from "../pages/SignIn-&-LogIn";
@@ -18,6 +19,7 @@ export default function Routes() {
             headerTitle: () => (
               <Image source={require("./../assets/Logo.png")} />
             ),
+
             headerTitleAlign: "center",
             headerTransparent: true,
             headerStyle: { backgroundColor: 'white', height: 140 }
@@ -25,24 +27,26 @@ export default function Routes() {
           }} />
         <Stack.Screen options={{
           headerTitle: () => (
-            // <Image source={require("./assets/LogIn/Header.png")} />
             <></>
-
+          ),
+          headerLeft: ({ }) => (
+            <BackButton />
           ),
           headerTransparent: true,
-          // headerStyle: { backgroundColor: 'white', height: 350, width: "100%", position: 'absolute' }
+          headerStyle: { backgroundColor: 'white', height: 230 },
+
 
         }} name="LogIn" component={LogIn}
         />
         <Stack.Screen options={{
           headerTitle: () => (
-            // <ImageBackground source={require("./assets/LogIn/Header.png")} style={{ flex: 1, height: "60%", width: '100%', backgroundColor: "red" }}></ImageBackground>
             <></>
-
-
+          ),
+          headerLeft: ({ }) => (
+            <BackButton />
           ),
           headerTransparent: true,
-          headerStyle: {}
+          headerStyle: { backgroundColor: 'white', height: 230 },
 
         }} name="SignUp" component={SignUp}
         />

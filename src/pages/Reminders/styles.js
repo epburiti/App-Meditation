@@ -18,7 +18,6 @@ color:#3F414E;
 export const TextOpacity = styled.Text`
 font-size:15px;
 color:#3F414E;
-
 `;
 export const SubTitle = styled.Text`
 font-size:13px;

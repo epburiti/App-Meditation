@@ -1,26 +1,25 @@
 import React from 'react';
-import { Image, Text, ImageBackground } from "react-native";
+import { Image, Text, TouchableOpacity } from "react-native";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import BackButton from "../components/Back-Button";
+import HeaderRight from "../components/Header-right";
 import Welcome from "../pages/welcome";
 import Topic from "../pages/Topic";
 import Reminders from "../pages/Reminders";
-import Home from "../pages/Home";
 import SubRoutes from "./subRoutes";
 import Course from "../pages/course-details";
+import PlaySong from "../pages/play-song";
+import PlayOption from "../pages/Play-Option-Sleep/index";
 
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createStackNavigator();
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-
-const Tab = createMaterialBottomTabNavigator();
 
 export default function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen name="Welcome" component={Welcome}
+        <Stack.Screen name="Welcome" component={Welcome}
           options={{
             headerTitle: () => (
               <Image source={require("./../assets/Logo.png")} />
@@ -39,29 +38,68 @@ export default function Routes() {
           options={{
             headerShown: false
 
-          }} /> */}
+          }} />
         <Stack.Screen name="Home" component={SubRoutes}
           options={{
             headerShown: false
+
+          }} />
+        <Stack.Screen name="PlaySong" component={PlaySong}
+          options={{
+            headerTitle: () => (
+              // <Image source={require("./../assets/Course/Header.png")} />
+              <>
+              </>
+            ),
+            headerLeft: () => (
+              <BackButton />
+            ),
+            headerRight: () => (
+              <HeaderRight />
+            ),
+            headerTitleAlign: "center",
+            headerTransparent: true,
+            headerStyle: { backgroundColor: 'white', height: 230 },
 
           }} />
         <Stack.Screen name="Course" component={Course}
 
           options={{
             headerTitle: () => (
-              <Image source={require("./../assets/Course/Header.png")} />
+              // <Image source={require("./../assets/Course/Header.png")} />
+              <></>
             ),
-            headerBackTitle: ({ goBack }) => ({
-              left: <Icon name={'arrow-left'} onPress={() => { }} />
-            }),
+            headerRight: () => (
+              <HeaderRight />
+            ),
+            headerLeft: () => (
+              <BackButton />
+            ),
             headerTitleAlign: "center",
             headerTransparent: true,
             headerStyle: { backgroundColor: 'white', height: 230 },
 
 
           }} />
+        <Stack.Screen name="PlayOption" component={PlayOption}
+
+          options={{
+            headerTitle: () => (
+              // <Image source={require("./../assets/Play-Option-sleep/main.png")} />
+              <></>
+            ),
+            headerLeft: () => (
+              <BackButton />
+            ),
+            headerRight: () => (
+              <HeaderRight />
+            ),
+            headerTitleAlign: "center",
+            headerTransparent: true,
+            headerStyle: { backgroundColor: 'white', height: 230 },
 
 
+          }} />
       </Stack.Navigator>
 
     </NavigationContainer>

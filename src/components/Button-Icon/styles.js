@@ -29,7 +29,7 @@ export const ViewBtn = styled.View`
   width:66%; 
   flex-direction:row;
   justify-content:space-between;
-  
+  `
 
 // export const Icon = styled(Icon)`
 //   /* color: #ffff; */
