@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Image } from 'react-native';
+import { Image, StatusBar } from 'react-native';
 
 import { Container, ViewTop, TextBold, TextOpacity, IconCustom, ViewIcons, ContainerIcons, TextIcon, IconCustomFontisto, TextTabs, ContainerScroll, FlatListCustom, ViewImgContainer, TxtFooter, TxtFooterOpacity, ImageTopHeader } from './styles';
 import { useNavigation } from '@react-navigation/native';
@@ -41,6 +41,8 @@ const PlayOption = () => {
   }
   return (
     <ContainerScroll contentContainerStyle={{ flexGrow: 1 }} >
+      <StatusBar backgroundColor="#03174C" barStyle="light-content" />
+
       <ImageTopHeader source={require("./../../assets/Play-Option-sleep/main.png")} />
       <Container>
         <ViewTop>
@@ -69,7 +71,7 @@ const PlayOption = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
-          <ViewImgContainer onPress={() => navigation.navigate("PlaySong", true)}>
+          <ViewImgContainer onPress={() => navigation.navigate("PlaySong", { sleep: true })}>
             <Image source={item.src} />
             <TxtFooter>{item.Txt}</TxtFooter>
             <TxtFooterOpacity>{item.TxtSub}</TxtFooterOpacity>

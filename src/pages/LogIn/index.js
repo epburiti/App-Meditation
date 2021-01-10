@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { ImageBackground } from "react-native";
 
 import ButtonMidia from "./../../components/Button-Icon";
 import ButtonCustom from "./../../components/Button";
@@ -15,32 +16,35 @@ const LogIn = ({ navigation }) => {
   }
 
   return (
+
     <ScrollViewCustom contentContainerStyle={{ flexGrow: 1 }}>
+      <ImageBackground source={require("./../../assets/LogIn/Header.png")}
+        style={{ flex: 1, width: '100%', height: '50%' }} >
+        <Container>
 
-      <Container>
+          <TextTop>Welcome Back!</TextTop>
 
-        <TextTop>Welcome Back!</TextTop>
+          <ButtonMidia media="Facebook" />
+          <ButtonMidia media="Google" />
 
-        <ButtonMidia media="Facebook" />
-        <ButtonMidia media="Google" />
+          <TxtLogIn>OR LOG IN WITH EMAIL</TxtLogIn>
 
-        <TxtLogIn>OR LOG IN WITH EMAIL</TxtLogIn>
+          <InputCustom placeholder="Email address" autoCompleteType="email" />
+          <InputCustom placeholder="Password" autoCompleteType="password" />
 
-        <InputCustom placeholder="Email address" autoCompleteType="email" />
-        <InputCustom placeholder="Password" autoCompleteType="password" />
+          <ButtonCustom desc="Log In" onPress={handleSign} />
 
-        <ButtonCustom desc="Log In" onPress={handleSign} />
-
-        <FogPass>Forgot Password?</FogPass>
+          <FogPass>Forgot Password?</FogPass>
 
 
-        <TxtBottom>ALREADY HAVE AN ACCOUNT?
+          <TxtBottom>ALREADY HAVE AN ACCOUNT?
         <LinkToView onPress={() => { navigation.navigate('SignUp') }}> SIGN UP</LinkToView>
-        </TxtBottom>
-        <DecorationBottom />
+          </TxtBottom>
+          <DecorationBottom />
 
-      </Container>
-    </ScrollViewCustom>
+        </Container>
+      </ImageBackground >
+    </ScrollViewCustom >
   );
 }
 

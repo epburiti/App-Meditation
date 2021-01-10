@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, StatusBar } from 'react-native';
 
 import { Container, ViewTop, TextBold, TextOpacity, IconCustom, ViewIcons, ContainerIcons, TextIcon, IconCustomFontisto, ViewTabBars, ViewTabBarsHeader, ButtonHeader, TextButtonHeader, TextTabs, IconPlay, ContainerSongs, ButtonPlaySong, ContainerSongsTitles, TitleSong, SubTitleSong, ContainerScroll, ImageTopHeader } from './styles';
 
@@ -8,6 +8,7 @@ const Course = ({ navigation }) => {
   const [female, setFemale] = useState(false);
   return (
     <ContainerScroll contentContainerStyle={{ flexGrow: 1 }} >
+      <StatusBar barStyle="dark-content" />
       <ImageTopHeader source={require("./../../assets/Course/Header.png")} />
 
       <Container>
@@ -38,28 +39,28 @@ const Course = ({ navigation }) => {
       </Container>
 
       <ContainerSongs>
-        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong")}>
+        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong", { sleep: false })}>
           <IconPlay name={"playcircleo"} size={40} color={"#A1A4B2"} />
           <ContainerSongsTitles>
             <TitleSong>Focus Attention</TitleSong>
             <SubTitleSong>10 min</SubTitleSong>
           </ContainerSongsTitles>
         </ButtonPlaySong>
-        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong")}>
+        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong", { sleep: false })}>
           <IconPlay name={"playcircleo"} size={40} color={"#A1A4B2"} />
           <ContainerSongsTitles>
             <TitleSong>Focus Attention</TitleSong>
             <SubTitleSong>10 min</SubTitleSong>
           </ContainerSongsTitles>
         </ButtonPlaySong>
-        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong")}>
+        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong", { sleep: false })}>
           <IconPlay name={"playcircleo"} size={40} color={"#A1A4B2"} />
           <ContainerSongsTitles>
             <TitleSong>Focus Attention</TitleSong>
             <SubTitleSong>10 min</SubTitleSong>
           </ContainerSongsTitles>
         </ButtonPlaySong>
-        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong")}>
+        <ButtonPlaySong onPress={() => navigation.navigate("PlaySong", { sleep: false })}>
           <IconPlay name={"playcircleo"} size={40} color={"#A1A4B2"} />
           <ContainerSongsTitles>
             <TitleSong>Focus Attention</TitleSong>

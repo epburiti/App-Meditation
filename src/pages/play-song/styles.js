@@ -26,10 +26,11 @@ export const ViewMid = styled.View`
 export const TextBold = styled.Text`
 font-weight:bold;
 font-size:28px;
-color:#3F414E;
+color: ${props => props.color};
 `;
 export const TextOpacity = styled.Text`
 margin-top:5px;
 font-size:15px;
-color:#A1A4B2;
+color: ${props => props.color};
+
 `;

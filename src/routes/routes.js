@@ -47,7 +47,6 @@ export default function Routes() {
         <Stack.Screen name="PlaySong" component={PlaySong}
           options={{
             headerTitle: () => (
-              // <Image source={require("./../assets/Course/Header.png")} />
               <>
               </>
             ),
@@ -66,7 +65,6 @@ export default function Routes() {
 
           options={{
             headerTitle: () => (
-              // <Image source={require("./../assets/Course/Header.png")} />
               <></>
             ),
             headerRight: () => (
@@ -78,14 +76,11 @@ export default function Routes() {
             headerTitleAlign: "center",
             headerTransparent: true,
             headerStyle: { backgroundColor: 'white', height: 230 },
-
-
           }} />
         <Stack.Screen name="PlayOption" component={PlayOption}
 
           options={{
             headerTitle: () => (
-              // <Image source={require("./../assets/Play-Option-sleep/main.png")} />
               <></>
             ),
             headerLeft: () => (

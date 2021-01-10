@@ -39,13 +39,15 @@ export default function Routes() {
       screenOptions={({ route }) => settingsTab(route)}
       activeTintColor='#8E97FD'
       activeColor='#8E97FD'
-      inactiveTintColor='#FFF'
+      inactiveColor='#98A1BD'
       activeBackgroundColor={true}
       barStyle={{ backgroundColor: '#ffff' }}
       labelStyle={{ fontWeight: 'bold', fontSize: "22px" }}
     >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Sleep" component={HomeSleep} />
+      <Tab.Screen name="Sleep" component={HomeSleep} options={{
+        tabBarColor: "#03174D"
+      }} />
       <Tab.Screen name="Meditate" component={Meditate} />
       <Tab.Screen name="Music" component={PlaySong}
         tabBarVisible={true}

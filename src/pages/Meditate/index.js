@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, StatusBar } from 'react-native';
 
 import { Container, ScrollViewCustom, ViewTop, SubTitle, ViewIconsTop, IconCustom, ButtonImgTop, ContainerImgs, ViewImgContainer, ContainerImgsSub } from './styles';
 import { TextBold } from './../Topic/styles';
@@ -11,6 +11,8 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 const Meditate = ({ navigation }) => {
   return (
     <ScrollViewCustom contentContainerStyle={{ flexGrow: 1 }} showsVerticalScrollIndicator={true}>
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
+
       <Container>
         <ViewTop>
           <TextBold>Meditate</TextBold>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Image, View } from 'react-native';
+import { Image, View, StatusBar } from 'react-native';
 
 import { Container, ViewMiddle, ButtonImage, ViewTxtMid, ButtonImageMid, FlatListCustom, LinkToView, ImageCustomFooter, ScrollViewCustom, TxtFooter, TxtFooterOpacity, ImageTop } from './styles';
 
@@ -41,6 +41,8 @@ const Home = () => {
   }
   return (
     <ScrollViewCustom contentContainerStyle={{ flexGrow: 1 }} showsVerticalScrollIndicator={false}>
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
+
       <Container>
         <ImageTop source={require("./../../assets/Logo.png")} />
 

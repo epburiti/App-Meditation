@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, StatusBar } from 'react-native';
 
 import { Container, ImageTop, ScrollViewCustom, ViewTop, SubTitle, ViewIconsTop, IconCustom, ButtonImgTop, ViewImgContainer, TextBold, TxtFooter, TxtFooterOpacity, FlatListCustom } from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -38,6 +38,8 @@ const Home = ({ navigation }) => {
   return (
 
     <ScrollViewCustom contentContainerStyle={{ flexGrow: 1 }} showsVerticalScrollIndicator={false}>
+      <StatusBar backgroundColor="#03174C" barStyle="light-content" />
+
       <ImageTop source={require("./../../assets/Home-Sleep/sleep.png")} style={{ flex: 1, height: "500%", width: '100%' }}>
         <Container>
           <ViewTop>

@@ -6,6 +6,7 @@ export const ScrollViewCustom = styled.ScrollView`
 
 export const Container = styled.View`
 align-items:center;
+background-color: #ffffff;
 `;
 export const ViewTop = styled.View`
 margin-top:10%;
@@ -42,7 +43,7 @@ export const ContainerImgs = styled.View`
 margin-top:30px;
 flex-direction:row;
 /* flex-wrap:wrap; */
-width:90%;
+width:95%;
 `;
 export const ContainerImgsSub = styled.View`
 /* marginleft */

@@ -4,15 +4,13 @@ export const ScrollViewCustom = styled.ScrollView`
   margin:0;
 `;
 export const Container = styled.View`
-  margin-top:50px;
-  background-color: #ffffff;
+margin-top:50px;
   height:100%;
   margin-bottom:0;
   justify-content:space-around;
   align-items:center;
-
-  
 `;
+
 export const TextTop = styled.Text`
  color:#3F414E;
   font-size:24px;

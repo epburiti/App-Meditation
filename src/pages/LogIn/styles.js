@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 export const ScrollViewCustom = styled.ScrollView`
-  background-color:#ffffff;
+  background-color:#FFFFFF;
   margin:0;
 `;
 export const Container = styled.View`
