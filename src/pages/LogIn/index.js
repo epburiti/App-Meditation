@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ImageBackground } from "react-native";
+import { ImageBackground, StatusBar } from "react-native";
 
 import ButtonMidia from "./../../components/Button-Icon";
 import ButtonCustom from "./../../components/Button";
@@ -18,6 +18,8 @@ const LogIn = ({ navigation }) => {
   return (
 
     <ScrollViewCustom contentContainerStyle={{ flexGrow: 1 }}>
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
+
       <ImageBackground source={require("./../../assets/LogIn/Header.png")}
         style={{ flex: 1, width: '100%', height: '50%' }} >
         <Container>

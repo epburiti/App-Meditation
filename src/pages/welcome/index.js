@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground } from 'react-native';
+import { ImageBackground, StatusBar } from 'react-native';
 
 import { Container, ViewTop, TxtStrong, TxtWithOpacity, TxtInfo } from './styles';
 import ButtonCustom from "./../../components/Button";
@@ -7,6 +7,8 @@ import DecorationBottom from "./../../components/DecorationBottom";
 const welcome = ({ navigation }) => {
   return (
     <>
+      <StatusBar backgroundColor="#99A1FF" barStyle="light-content" />
+
       <ImageBackground
 
         // resizeMode={'stretch'} // or cover
